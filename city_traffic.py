@@ -58,7 +58,7 @@ def get_items_of_sub_graph(parents, graph):
 			children = list(set(children) - set(exclude_items))
 			exclude_items.append(parent)
 			
-			# recusive call for exploring nodes within nodes
+			# recursive call for exploring nodes within nodes
 			get_items_of_sub_graph(children, graph)
 		except KeyError:
 			# As we have graph data excluding the nodes with only one vertices as it helps 
